@@ -10,6 +10,7 @@ LOCAL_SRC_FILES:=                 \
     ALooper.cpp                   \
     ALooperRoster.cpp             \
     AMessage.cpp                  \
+    XMessage.cpp                  \
     AString.cpp                   \
     base64.cpp                    \
     hexdump.cpp

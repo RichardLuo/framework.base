@@ -22,8 +22,10 @@
 
 extern "C" {
 
+#if __GNUC__ < 4 || (__GNUC__ == 4 && __GNUC_MINOR__ < 4) || !defined(__GXX_EXPERIMENTAL_CXX0X__)
 typedef uint32_t char32_t;
 typedef uint16_t char16_t;
+#endif
 
 // Standard string functions on char16_t strings.
 int strcmp16(const char16_t *, const char16_t *);
